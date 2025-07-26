@@ -7,8 +7,8 @@ console.log('Contraseña del correo:', process.env.EMAIL_PASS ? '✓' : 'X');
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_USER,   // 👈 corregido
-    pass: process.env.EMAIL_PASS    // 👈 corregido
+    user: process.env.EMAIL_USER,   
+    pass: process.env.EMAIL_PASS    
   }
 });
 
@@ -23,8 +23,8 @@ export const enviarCorreo = async ({ nombre, telefono, fecha, hora }) => {
   `;
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,         // 👈 corregido
-    to: process.env.EMAIL_DESTINO,        // 👈 corregido
+    from: process.env.EMAIL_USER,         
+    to: process.env.EMAIL_DESTINO,        
     subject: 'Nuevo turno reservado',
     text: mensaje
   };

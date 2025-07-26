@@ -1,4 +1,4 @@
-// controllers/adminTurnos.js
+
 import db from '../../db.js';
 
 export const obtenerTurnosReservados = (req, res) => {
