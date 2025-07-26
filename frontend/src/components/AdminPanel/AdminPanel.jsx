@@ -21,7 +21,7 @@ const AdminPanel = () => {
 
   const obtenerTurnos = async () => {
     try {
-      const res = await fetch('http://localhost:3000/AdminPanel/turnos');
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/AdminPanel/turnos`);
       const data = await res.json();
       setTurnosReservados(data);
     } catch (error) {
@@ -33,7 +33,7 @@ const AdminPanel = () => {
     if (!window.confirm("¿Estás seguro de eliminar este turno?")) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/AdminPanel/turnos/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/AdminPanel/turnos/${id}`, {
         method: "DELETE",
       });
       const data = await res.json();
@@ -51,7 +51,7 @@ const AdminPanel = () => {
 
   const bloquearTurno = async (fecha, hora) => {
     try {
-      const res = await fetch('http://localhost:3000/AdminPanel/bloquear', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/AdminPanel/bloquear`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

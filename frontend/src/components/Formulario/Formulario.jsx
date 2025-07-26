@@ -11,7 +11,7 @@ const Formulario = ({ turno, onCancelar, onReservarExitoso }) => {
   e.preventDefault();
 
   try {
-    const response = await fetch('http://localhost:3000/api/turnos', {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/turnos`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
