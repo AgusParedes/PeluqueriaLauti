@@ -40,7 +40,7 @@ function Calendario() {
   return (
     <div className="calendario">
       <h2>Peluqueria de Lautaro Paredes</h2>
-      <h3>Reserva aca tu turno completado con tu datos, si el boton esta bloqueado es porque ya fue reservado. Por cualquier duda o consulta hace:</h3>
+      <h3>Reserva acá  tu turno completando tus datos. Si el botón está bloqueado, es porque ya fue reservado. Por cualquier duda o consulta, contactanos:</h3>
       <a
         href="https://wa.me/5493404408785"
         target="_blank"
