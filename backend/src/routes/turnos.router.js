@@ -1,9 +1,10 @@
 import { Router } from 'express';
-import { obtenerTurnosDisponibles, crearTurno } from '../controller/turnos.controller.js';
+import { obtenerTurnosOcupados, crearTurno } from '../controller/turnos.controller.js';
 
 const router = Router();
 
-router.get('/:fecha', obtenerTurnosDisponibles);
+router.get('/', obtenerTurnosOcupados);
 router.post('/', crearTurno);
+
 
 export default router;

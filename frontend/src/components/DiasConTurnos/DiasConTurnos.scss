@@ -1,0 +1,21 @@
+.horarios{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 0 60px 0;
+}
+.boton-disponible{
+    color: white;
+    background-color: #1a1a1a;
+}
+.boton-reservado{
+    color: gray;
+    cursor: not-allowed;
+    border: none;
+    background-color: #1a1a1a;
+}
+.dia{
+    color: white;
+}

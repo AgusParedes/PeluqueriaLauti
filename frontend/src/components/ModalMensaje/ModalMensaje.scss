@@ -1,0 +1,50 @@
+.modal-mensaje-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-mensaje-container {
+  background: white;
+  padding: 25px 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modal-mensaje-container.exito .mensaje {
+  color: #2e7d32;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.modal-mensaje-container.error .mensaje {
+  color: #c62828; 
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.modal-mensaje-container button {
+  background-color: #1976d2;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-mensaje-container button:hover {
+  background-color: #115293;
+}

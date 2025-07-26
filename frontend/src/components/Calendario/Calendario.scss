@@ -1,0 +1,22 @@
+.dias-grid div:nth-child(6){
+    margin-bottom: 250px;
+}
+.dias-grid{
+    margin-top: 100px;
+}
+.calendario{
+    h2{
+        color: white;
+    }
+    h3{
+        margin-bottom: 50px;
+        color: white;
+    }
+    a{
+        margin-top: 20px;
+        padding: 15px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border-radius: 5px;
+    }
+}
