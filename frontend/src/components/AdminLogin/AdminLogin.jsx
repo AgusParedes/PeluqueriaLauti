@@ -34,6 +34,7 @@ function AdminLogin() {
   return (
     <div>
       <h2 style={{color:'white'}}>Iniciar sesión</h2>
+      <p style={{ color: 'white' }}>API_URL: {import.meta.env.VITE_API_URL}</p>
       <form onSubmit={manejarLogin}>
         <input
           type="text"
