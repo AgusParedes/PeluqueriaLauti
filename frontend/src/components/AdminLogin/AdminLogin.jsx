@@ -9,9 +9,8 @@ function AdminLogin() {
 
   const manejarLogin = async (e) => {
     e.preventDefault();
-    console.log("API_URL:", import.meta.env.VITE_API_URL);
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ usuario, password })
@@ -34,7 +33,6 @@ function AdminLogin() {
   return (
     <div>
       <h2 style={{color:'white'}}>Iniciar sesión</h2>
-      <p style={{ color: 'white' }}>API_URL: {import.meta.env.VITE_API_URL}</p>
       <form onSubmit={manejarLogin}>
         <input
           type="text"
