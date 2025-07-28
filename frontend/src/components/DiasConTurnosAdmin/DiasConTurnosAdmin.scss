@@ -39,10 +39,13 @@
   display: flex;
   align-items: center;
 }
-.div_botonAdmin{
+.div_botonAdmin, .hora-pasada{
     height: 151px;
     display: flex;
     align-items: center;
+}
+.hora-pasada{
+  color: black;
 }
 .boton-bloquear,
 .boton-borrar {
